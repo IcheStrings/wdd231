@@ -1,0 +1,58 @@
+[
+    {
+        "name": "ABC Tech",
+        "address": "123 Main St, Timbuktu",
+        "phone": "(223) 555-1001",
+        "website": "https://abctech.com",
+        "image": "abc-tech.jpg",
+        "membership": 3
+    },
+    {
+        "name": "XYZ Solutions",
+        "address": "456 Commerce Ave, Timbuktu",
+        "phone": "(223) 555-1002",
+        "website": "https://xyzsolutions.com",
+        "image": "xyz-solutions.jpg",
+        "membership": 2
+    },
+    {
+        "name": "Timbuktu Hardware",
+        "address": "789 Industrial Rd, Timbuktu",
+        "phone": "(223) 555-1003",
+        "website": "https://timbuktuhardware.com",
+        "image": "domenico-loia-hGV2TfOh0ns-unsplash.jpg",
+        "membership": 1
+    },
+    {
+        "name": "Global Logistics",
+        "address": "101 Trade St, Timbuktu",
+        "phone": "(223) 555-1004",
+        "website": "https://globallogistics.com",
+        "image": "headway-5QgIuuBxKwM-unsplash.jpg",
+        "membership": 2
+    },
+    {
+        "name": "Green Energy Co.",
+        "address": "202 Solar Lane, Timbuktu",
+        "phone": "(223) 555-1005",
+        "website": "https://greenenergy.com",
+        "image": "michal-kubalczyk-WecngmAT-KY-unsplash.jpg",
+        "membership": 3
+    },
+    {
+        "name": "FinTech Solutions",
+        "address": "303 Finance Blvd, Timbuktu",
+        "phone": "(223) 555-1006",
+        "website": "https://fintechsolutions.com",
+        "image": "nikita-katsevich-QXDJGPZTwxs-unsplash.jpg",
+        "membership": 2
+    },
+    {
+        "name": "The Coffee House",
+        "address": "404 Brew Ave, Timbuktu",
+        "phone": "(223) 555-1007",
+        "website": "https://coffeehouse.com",
+        "image": "rafael-pol-6b5uqlWabB0-unsplash.jpg",
+        "membership": 1
+    }
+]
