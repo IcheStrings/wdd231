@@ -25,6 +25,13 @@ header {
     height: 50px;
     border-radius: 50%;
     margin-right: 15px;
+    object-fit: cover;
+}
+
+.optimized-img {
+    width: 100%;
+    max-width: 250px;
+    height: auto;
 }
 
 /* Navigation */

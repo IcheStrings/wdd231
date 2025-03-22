@@ -1,4 +1,4 @@
-// Responsive Navigation Menu
+// ✅ Responsive Navigation Menu
 const menuButton = document.querySelector('.menu-button');
 const navMenu = document.querySelector('.nav-links');
 
@@ -6,11 +6,11 @@ menuButton.addEventListener('click', () => {
     navMenu.classList.toggle('show');
 });
 
-// Dynamic Footer Information
+// ✅ Dynamic Footer Information
 document.getElementById('currentyear').textContent = new Date().getFullYear();
 document.getElementById('lastModified').textContent = `Last Update: ${document.lastModified}`;
 
-// Course Data
+// ✅ Course Data
 const courses = [
     { subject: 'CSE', number: 110, title: 'Intro to Programming', credits: 2, completed: true },
     { subject: 'WDD', number: 130, title: 'Web Fundamentals', credits: 2, completed: false },
@@ -20,7 +20,7 @@ const courses = [
     { subject: 'WDD', number: 231, title: 'Frontend Web Dev I', credits: 2, completed: true }
 ];
 
-// Course Display Function
+// ✅ Course Display Function
 const courseContainer = document.querySelector('.courses');
 const filterButtons = document.querySelectorAll('.buttons button');
 
@@ -39,5 +39,5 @@ function displayCourses(filter = 'All') {
     document.getElementById('totalCredits').textContent = `Total Credits: ${filteredCourses.reduce((sum, course) => sum + course.credits, 0)}`;
 }
 
-// Initial Display
+// ✅ Initial Display
 displayCourses();

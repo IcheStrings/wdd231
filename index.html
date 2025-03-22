@@ -7,7 +7,9 @@
     <meta name="description" content="WDD 231 – Web Frontend Development 1 - Learn about web development fundamentals.">
     <title>WDD 231 - Web Frontend Development</title>
 
-    <!-- Google Fonts -->
+    <!-- ✅ Google Fonts Optimization -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100..900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 
@@ -16,14 +18,14 @@
 </head>
 <body>
 
-    
+    <!-- ✅ Fixed Image Filename -->
     <header>
         <img src="images/ICHES PROFESSIONAL PHOTO.jpg" alt="Ichechuku Photo" class="profile-pic">
         <span>Ichechuku Enwuka</span>
         <div class="menu-button">☰</div>
     </header>
 
-    
+    <!-- Navigation -->
     <nav>
         <ul class="nav-links">
             <li><a href="#" class="active">Home</a></li>
@@ -47,10 +49,13 @@
             </ul>
         </section>
 
-        <!-- Location Section -->
+        <!-- ✅ Fixed Image Not Found Issue -->
         <section>
             <h2>Lagos, Nigeria</h2>
-            <img src="images/nationalFlag.webp" alt="Nigeria Flag" class="optimized-img">
+            <picture>
+                <source srcset="images/nationalFlag.jpg" type="image/jpg">
+                <img src="images/nationalFlag.jpg" alt="Nigeria Flag" class="optimized-img">
+            </picture>
             <p>Nigeria Flag</p>
         </section>
 
