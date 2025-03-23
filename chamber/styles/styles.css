@@ -27,12 +27,126 @@ nav ul li {
 nav ul li a {
     color: white;
     text-decoration: none;
+    padding: 10px 15px;
+    transition: background 0.3s, color 0.3s;
 }
 
+nav ul li a:hover {
+    background: #ffaa00; /* Change background color on hover */
+    color: #004466; /* Change text color */
+    border-radius: 5px;
+}
 main {
     padding: 20px;
     text-align: center;
 }
+
+/* Hero Section */
+.hero {
+    position: relative;
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+}
+
+.hero img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    padding: 20px;
+    text-align: center;
+    border-radius: 8px;
+}
+
+.hero-text h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+.cta-button {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #f8b400;
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.cta-button:hover {
+    background-color: #e69a00;
+}
+
+/* Current Events Section */
+.events {
+    background-color: white;
+    padding: 20px;
+    margin: 20px auto;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+    border-radius: 8px;
+}
+
+.events h2 {
+    margin-top: 0;
+}
+
+/* Weather Section */
+.weather {
+    background: #004466;
+    color: white;
+    padding: 20px;
+    margin: 20px auto;
+    border-radius: 8px;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+}
+
+.weather h2 {
+    margin-top: 0;
+}
+
+#forecast {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+#forecast div {
+    background: rgba(255, 255, 255, 0.2);
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* Spotlight Members Section */
+.spotlight {
+    background: white;
+    padding: 20px;
+    margin: 20px auto;
+    border-radius: 8px;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+}
+
+.spotlight h2 {
+    margin-top: 0;
+}
+
+#spotlight-container {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
 
 #membersContainer {
     display: flex;
@@ -90,6 +204,23 @@ main {
 @media (max-width: 600px) {
     .member {
         width: 90%;
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .member {
+        width: 90%;
+    }
+
+    .hero-text {
+        width: 80%;
+        font-size: 18px;
+    }
+
+    #forecast {
+        flex-direction: column;
+        align-items: center;
     }
 }
 
