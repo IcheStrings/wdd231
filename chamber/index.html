@@ -1,67 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Welcome to the Timbuktu Chamber of Commerce">
-    <meta name="author" content="Ichechuku Enwuka">
-    <meta property="og:title" content="Timbuktu Chamber of Commerce">
-    <meta property="og:type" content="website">
-    <meta property="og:image" content="images/hero.jpg">
-    <meta property="og:url" content="https://ichestrings.github.io/wdd231/chamber/index.html">
-    <title>Timbuktu Chamber of Commerce</title>
-    <link rel="icon" href="favicon.ico">
-    <link rel="stylesheet" href="styles/styles.css">
-    <script src="scripts/scripts.js" defer></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Timbuktu Chamber of Commerce</title>
+  <meta name="description" content="Welcome to the Timbuktu Chamber of Commerce" />
+  <link rel="icon" href="favicon.ico" />
+  <link rel="stylesheet" href="styles/styles.css" />
+  <script src="scripts/scripts.js" defer></script>
 </head>
 <body>
-    <header>
-        <div class="logo">Timbuktu Chamber of Commerce</div>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="directory.html">Directory</a></li>
-                <li><a href="join.html">Join</a></li>
-                <li><a href="discover.html">Discover</a></li>
-            </ul>
-        </nav>
-    </header>
-    
-    <main>
-        <!-- Hero Section -->
-        <section class="hero">
-            <img src="images/austin-distel-mpN7xjKQ_Ns-unsplash.jpg" alt="Welcome to Timbuktu Chamber of Commerce">
-            <div class="hero-text">
-                <h1>Empowering Businesses in Timbuktu</h1>
-                <p>Join us today and be a part of a thriving business community.</p>
-                <a href="join.html" class="cta-button">Join Now</a>
-            </div>
-        </section>
-        
-        <!-- Current Events Section -->
-        <section class="events">
-            <h2>Upcoming Events</h2>
-            <div id="eventsContainer"></div>
-        </section>
-        
-        <!-- Weather Section -->
-        <section class="weather">
-            <h2>Local Weather</h2>
-            <div id="weatherContainer">
-                <p>Loading weather data...</p>
-            </div>
-        </section>
-        
-        <!-- Spotlight Section -->
-        <section class="spotlights">
-            <h2>Member Spotlights</h2>
-            <div id="spotlightContainer"></div>
-        </section>
-    </main>
-    
-    <footer>
-        <p>&copy; <span id="year"></span> Timbuktu Chamber of Commerce</p>
-        <p>Last Modified: <span id="lastModified"></span></p>
-    </footer>
+  <header>
+    <div class="logo">Timbuktu Chamber</div>
+    <div id="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <nav>
+      <ul id="navList">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="directory.html">Directory</a></li>
+        <li><a href="join.html">Join</a></li>
+        <li><a href="discover.html">Discover</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <img src="images/austin-distel-mpN7xjKQ_Ns-unsplash.jpg" alt="Timbuktu Chamber">
+      <div class="hero-text">
+        <h1>Empowering Businesses in Timbuktu</h1>
+        <p>Join us today and be a part of a thriving community.</p>
+        <a href="join.html" class="cta-button">Join Now</a>
+      </div>
+    </section>
+
+    <section class="events">
+      <h2>Upcoming Events</h2>
+      <div id="eventsContainer">
+        <p>Market Day - April 5</p>
+        <p>Business Forum - April 12</p>
+      </div>
+    </section>
+
+    <section class="weather">
+      <h2>Local Weather</h2>
+      <p id="current-temp">Loading...</p>
+      <p id="weather-desc"></p>
+      <div id="forecast"></div>
+    </section>
+
+    <section class="spotlights">
+      <h2>Member Spotlights</h2>
+      <div id="spotlightContainer"></div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="year"></span> Timbuktu Chamber of Commerce</p>
+    <p>Last Modified: <span id="lastModified"></span></p>
+  </footer>
 </body>
 </html>
