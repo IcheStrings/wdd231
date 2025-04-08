@@ -180,17 +180,17 @@ main {
   gap: 1rem;
 }
 
-.card {
+.discover-card {
   background: white;
   padding: 1rem;
   border-radius: 8px;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
 }
-
-.card img {
+.discover-card img {
   width: 100%;
   border-radius: 5px;
 }
+
 
 /* ---------------- Footer ---------------- */
 footer {
