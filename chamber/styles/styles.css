@@ -223,3 +223,204 @@ footer {
     transition: transform 0.3s ease;
   }
 }
+
+/* General Layout and Spacing */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+main {
+  padding: 1rem;
+  max-width: 1200px;
+  margin: auto;
+}
+
+form {
+  display: grid;
+  gap: 1rem;
+  background: #fff;
+  padding: 1.5rem;
+  border-radius: 0.75rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+label {
+  display: flex;
+  flex-direction: column;
+  font-weight: 500;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+select,
+textarea {
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+}
+
+input[type="submit"],
+.button {
+  background-color: #0077cc;
+  color: #fff;
+  border: none;
+  padding: 0.75rem 1.25rem;
+  font-size: 1rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+  max-width: fit-content;
+}
+
+input[type="submit"]:hover,
+.button:hover {
+  background-color: #005fa3;
+}
+
+/* Membership Cards */
+.membership-cards {
+  display: grid;
+  gap: 1rem;
+  margin-top: 2rem;
+  animation: fadeUp 1.2s ease-in-out;
+}
+
+.membership-card {
+  background-color: #ffffff;
+  padding: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 0.75rem;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  animation: slideIn 0.8s ease forwards;
+}
+
+.membership-card h2 {
+  margin-top: 0;
+}
+
+.membership-card a {
+  color: #0077cc;
+  text-decoration: underline;
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateY(40px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    margin-top: 3rem;
+  }
+  to {
+    opacity: 1;
+    margin-top: 2rem;
+  }
+}
+
+/* Modals */
+dialog {
+  border: none;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  max-width: 400px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+  background: #fff;
+  z-index: 9999;
+}
+
+dialog h3 {
+  margin-top: 0;
+}
+
+dialog button {
+  margin-top: 1rem;
+  background-color: #ccc;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+
+/* Thank You Page */
+.thank-you h1 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.thank-you p {
+  font-size: 1.1rem;
+  margin-bottom: 1.5rem;
+}
+
+.confirmation {
+  background-color: #fff;
+  padding: 1rem;
+  border-radius: 0.75rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  margin-bottom: 2rem;
+}
+
+.confirmation p {
+  margin: 0.5rem 0;
+  font-size: 1rem;
+}
+
+/* Responsive */
+@media screen and (min-width: 768px) {
+  .membership-cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  form {
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+  }
+
+  label {
+    grid-column: span 2;
+  }
+
+  .confirmation {
+    padding: 2rem;
+  }
+}
+
+/* Join & Thank You Animation Enhancements */
+.membership-card {
+  opacity: 0;
+  transform: translateY(30px);
+  animation: fadeSlideUp 0.8s ease-out forwards;
+}
+
+@keyframes fadeSlideUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.thank-you {
+  text-align: center;
+  animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
