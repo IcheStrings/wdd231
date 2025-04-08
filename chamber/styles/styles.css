@@ -169,3 +169,39 @@
       display: flex;
     }
   }
+  .discover-grid {
+    display: grid;
+    grid-template-areas:
+      "sidebar"
+      "gallery";
+    gap: 1rem;
+    padding: 1rem;
+  }
+  
+  .sidebar {
+    grid-area: sidebar;
+    background: #fefefe;
+    padding: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+  }
+  
+  .gallery {
+    grid-area: gallery;
+    display: grid;
+    gap: 1rem;
+  }
+  
+  .card {
+    background: white;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+  }
+  @media (min-width: 641px) {
+    .card img:hover {
+      transform: scale(1.05);
+      transition: transform 0.3s ease;
+    }
+  }
+  

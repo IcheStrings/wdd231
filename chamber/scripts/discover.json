@@ -1,0 +1,52 @@
+
+[
+    {
+      "title": "Sankoré Madrasah",
+      "address": "Sankoré Quarter, Timbuktu, Mali",
+      "description": "A UNESCO World Heritage site, this ancient center of learning once held thousands of manuscripts.",
+      "image": "images/sankore.webp"
+    },
+    {
+      "title": "Timbuktu Market",
+      "address": "Main Street, Timbuktu",
+      "description": "Bustling with life, this market offers spices, fabrics, and local crafts.",
+      "image": "images/market.webp"
+    },
+    {
+      "title": "Ahmed Baba Institute",
+      "address": "Library Rd, Timbuktu",
+      "description": "Home to thousands of ancient manuscripts preserving African scholarly heritage.",
+      "image": "images/ahmed-baba.webp"
+    },
+    {
+      "title": "Djingareyber Mosque",
+      "address": "Djingareyber, Timbuktu",
+      "description": "One of the oldest mosques in continuous use, made from mudbrick and wood.",
+      "image": "images/mosque.webp"
+    },
+    {
+      "title": "Sidi Yahya Mosque",
+      "address": "Old Town, Timbuktu",
+      "description": "Built in the 15th century, famous for its historical significance and architectural beauty.",
+      "image": "images/sidi-yahya.webp"
+    },
+    {
+      "title": "Timbuktu Museum",
+      "address": "Heritage St, Timbuktu",
+      "description": "Explore the culture and heritage of the region through exhibitions and artifacts.",
+      "image": "images/museum.webp"
+    },
+    {
+      "title": "Bouctou Garden",
+      "address": "Greenway Ave, Timbuktu",
+      "description": "A peaceful garden space with native plants and shaded walkways.",
+      "image": "images/garden.webp"
+    },
+    {
+      "title": "Caravan Gateway",
+      "address": "Northern Outskirts, Timbuktu",
+      "description": "A symbolic point representing the historical trans-Saharan trade route.",
+      "image": "images/caravan.webp"
+    }
+  ]
+  
