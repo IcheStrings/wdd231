@@ -72,13 +72,29 @@
       </label>
 
       <label>
-        Membership Level:
-        <select name="membership" title="Select a membership level">
-          <option value="np">np membership</option>
-          <option value="bronze">bronze membership</option>
-          <option value="silver">silver membership</option>
-          <option value="gold">gold membership</option>
-        </select>
+        <dialog id="np_membership_modal">
+            <h3>NP Membership</h3>
+            <p>No fee. Great for non-profits. Includes directory listing and event invites.</p>
+            <button onclick="document.getElementById('np_membership_modal').close()">Close</button>
+          </dialog>
+          
+          <dialog id="bronze_membership_modal">
+            <h3>Bronze Membership</h3>
+            <p>Includes basic advertising and one event spotlight per quarter.</p>
+            <button onclick="document.getElementById('bronze_membership_modal').close()">Close</button>
+          </dialog>
+          
+          <dialog id="silver_membership_modal">
+            <h3>Silver Membership</h3>
+            <p>Two spotlights per quarter and event discounts.</p>
+            <button onclick="document.getElementById('silver_membership_modal').close()">Close</button>
+          </dialog>
+          
+          <dialog id="gold_membership_modal">
+            <h3>Gold Membership</h3>
+            <p>All benefits + homepage spotlight and social media features.</p>
+            <button onclick="document.getElementById('gold_membership_modal').close()">Close</button>
+          </dialog>
       </label>
 
       <label>
