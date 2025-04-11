@@ -1,0 +1,101 @@
+:root {
+  --primary-color: #d32f2f;
+  --secondary-color: #388e3c;
+  --text-color: #212121;
+  --background-color: #fafafa;
+  --font-family: 'Poppins', sans-serif;
+}
+
+body {
+  font-family: var(--font-family);
+  color: var(--text-color);
+  background-color: var(--background-color);
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  text-align: center;
+}
+
+header {
+  background-color: var(--primary-color);
+  color: #fff;
+  padding: 1rem;
+}
+
+#place-title {
+  margin: 0;
+  font-size: 2rem;
+}
+
+.icon {
+  color: yellow;
+  font-size: 1.5rem;
+  display: none;
+}
+
+.hero picture,
+.hero img {
+  width: 100%;
+  display: block;
+  height: auto;
+}
+
+.data,
+.weather {
+  background: #fff;
+  padding: 1.5rem;
+  margin: 1rem auto;
+  width: 90%;
+  max-width: 600px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  text-align: left;
+}
+
+h2 {
+  color: var(--secondary-color);
+  margin-top: 0;
+}
+
+.weather-icon-svg {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.weather-emoticon {
+  display: none;
+  font-size: 1.5rem;
+}
+
+footer {
+  background-color: var(--primary-color);
+  color: white;
+  padding: 1rem;
+  margin-top: 2rem;
+  font-size: 0.9rem;
+}
+
+/* Responsive Design */
+@media (min-width: 768px) {
+  .icon {
+      display: inline;
+  }
+
+  .weather-emoticon {
+      display: inline;
+  }
+
+  .weather-icon-svg {
+      display: none;
+  }
+}
+
+h2::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 4px;
+  background-color: var(--secondary-color);
+  margin: 0.5rem auto 1rem;
+  border-radius: 4px;
+}

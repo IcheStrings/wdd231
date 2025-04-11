@@ -1,0 +1,80 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f1f8;
+    margin: 0;
+    padding: 1rem;
+    color: #333;
+  }
+  
+  main {
+    max-width: 500px;
+    margin: auto;
+    background: #e6dee9;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #aaa;
+  }
+  
+  h1 {
+    text-align: center;
+    color: #2c003e;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  label {
+    margin-top: 1rem;
+    font-weight: 700;
+  }
+  
+  .required::after {
+    content: "*";
+    color: red;
+    margin-left: 4px;
+  }
+  
+  .optional {
+    font-size: 0.85em;
+    color: #555;
+  }
+  
+  input[type="text"],
+  input[type="date"],
+  select,
+  textarea {
+    width: 100%;
+    padding: 0.5rem;
+    margin-top: 0.3rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  fieldset {
+    border: none;
+    margin-top: 1rem;
+  }
+  
+  input[type="submit"] {
+    margin-top: 2rem;
+    background: #2c003e;
+    color: white;
+    font-weight: bold;
+    padding: 0.75rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  input[type="submit"]:hover {
+    background: #470c70;
+  }
+  
+  footer {
+    text-align: center;
+    font-size: 0.8rem;
+    margin-top: 2rem;
+  }
+  

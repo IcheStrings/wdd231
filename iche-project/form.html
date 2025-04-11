@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Leave a review for your favorite futuristic product." />
+  <meta name="author" content="Ichechuku Enwuka" />
+  <title>Product Review</title>
+  
+  <!-- Google Fonts (Complete Embed Link) -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="styles/form.css" />
+  <script src="scripts/form.js" defer></script>
+</head>
+<body>
+  <main>
+    <h1>Product Review</h1>
+    <form method="get" action="review.html">
+      <label for="product">Product Name <span aria-hidden="true" class="required">*</span></label>
+      <select id="product" name="product" required>
+        <option value="" disabled selected>Choose a Product ...</option>
+        <!-- JavaScript will inject options here -->
+      </select>
+
+      <fieldset>
+        <legend>Overall Rating <span aria-hidden="true" class="required">*</span></legend>
+        <label><input type="radio" name="rating" value="1" required /> ☆</label>
+        <label><input type="radio" name="rating" value="2" /> ☆☆</label>
+        <label><input type="radio" name="rating" value="3" /> ☆☆☆</label>
+        <label><input type="radio" name="rating" value="4" /> ☆☆☆☆</label>
+        <label><input type="radio" name="rating" value="5" /> ☆☆☆☆☆</label>
+      </fieldset>
+
+      <label for="install-date">Date of Installation <span aria-hidden="true" class="required">*</span></label>
+      <input type="date" id="install-date" name="install-date" required />
+
+      <fieldset>
+        <legend>Which features did you find useful?<br><small>(Check all that apply)</small></legend>
+        <label><input type="checkbox" id="durability" name="features" value="Durability" /> Durability</label>
+        <label><input type="checkbox" id="ease" name="features" value="Ease of Use" /> Ease of Use</label>
+        <label><input type="checkbox" id="performance" name="features" value="Performance" /> Performance</label>
+        <label><input type="checkbox" id="design" name="features" value="Design" /> Design</label>
+      </fieldset>
+
+      <label for="review">Written Review <span class="optional">(Optional)</span></label>
+      <textarea id="review" name="review"></textarea>
+
+      <label for="username">Your Name <span class="optional">(Optional)</span></label>
+      <input type="text" id="username" name="username" />
+
+      <input type="submit" value="Post Review" />
+    </form>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 🌸 Ichechuku Enwuka 🌸 Nigeria</p>
+    <p>Last Modification: <span id="last-modified"></span></p>
+  </footer>
+
+  <script>
+    document.getElementById("last-modified").textContent = document.lastModified;
+  </script>
+</body>
+</html>

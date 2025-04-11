@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Guide for vehicle registration and renewal in Nigeria.">
+    <title>AA Licensing Hub - Vehicle Registration</title>
+    <link rel="stylesheet" href="styles/project.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&family=Lora&family=Open+Sans:wght@400&display=swap" rel="stylesheet">
+    <script src="scripts/vehicle-form.js"></script>
+
+</head>
+<body>
+    <header>
+        <img src="images/Drivershub-logo.jpg" alt="AA Licensing Hub Logo" class="logo">
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="license.html">Driver’s License</a></li>
+                <li><a href="registration.html">Vehicle Registration</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="registration-info">
+            <div class="info-card">
+              <h3>📌 Required Documents</h3>
+              <ul>
+                <li>✔️ Custom Papers</li>
+                <li>✔️ Proof of Purchase</li>
+                <li>✔️ Valid Means of Identification</li>
+                <li>✔️ Chassis Image (clear photo of chassis number)</li>
+              </ul>
+            </div>
+          
+            <div class="info-card">
+              <h3>📄 Documents You Will Receive</h3>
+              <ul>
+                <li>✅ New Number Plate</li>
+                <li>✅ Allocation of Plate Number Slip</li>
+                <li>✅ Vehicle License</li>
+                <li>✅ Third-Party Insurance</li>
+                <li>✅ Proof of Ownership</li>
+                <li>✅ Roadworthiness Referral Note</li>
+              </ul>
+            </div>
+          
+            <div class="info-card">
+              <h3>⏱️ Processing Time</h3>
+              <p>Registration is <strong>completed within one week</strong>.</p>
+            </div>
+          </section>
+          
+      
+          <section class="vehicle-form">
+            <h2>Application Form for New Registration</h2>
+            <form action="https://formsubmit.co/aarescuesheets@gmail.com" method="POST">
+                <input type="hidden" name="_captcha" value="false">
+                <input type="hidden" name="_template" value="table">
+                <input type="hidden" name="_subject" value="New Vehicle Registration Submission">
+                <input type="hidden" name="_next" value="thank-you.html">
+              
+                <label for="name">Name:</label>
+                <input type="text" name="name" required>
+              
+                <label for="phone">Phone:</label>
+                <input type="tel" name="phone" required>
+              
+                <label for="address">Address:</label>
+                <input type="text" name="address" required>
+              
+                <label for="make">Vehicle Make:</label>
+                <input type="text" name="make" required>
+              
+                <label for="model">Model:</label>
+                <input type="text" name="model" required>
+              
+                <label for="color">Color:</label>
+                <input type="text" name="color" required>
+              
+                <label for="year">Year:</label>
+                <input type="text" name="year" required>
+              
+                <input type="submit" value="Submit Application">
+              </form>
+          </section>
+          
+      </main>
+      
+
+    <footer>
+        <p>© 2025 AA Licensing Hub. All rights reserved.</p>
+        <p><a href="references.html">References</a></p>
+    </footer>
+
+    <script src="scripts/project.js"></script>
+</body>
+</html>

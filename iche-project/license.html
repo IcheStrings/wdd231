@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="Guide for obtaining and renewing driver’s licenses in Nigeria.">
+  <title>AA Licensing Hub - Driver’s License Guide</title>
+  <link rel="stylesheet" href="styles/project.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&family=Lora&family=Open+Sans:wght@400&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <img src="images/Drivershub-logo.jpg" alt="AA Licensing Hub Logo" class="logo" />
+    <nav>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="license.html">Driver’s License</a></li>
+        <li><a href="registration.html">Vehicle Registration</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="timeline-section">
+      <h1>📝 New Driver’s License Process</h1>
+      <p class="intro">To obtain a driver's license in Nigeria, you need the following documents. Don’t worry—we’ll help you secure them.</p>
+
+      <div class="timeline-card">
+        <h2>📌 Requirements</h2>
+        <ul>
+          <li>✔ FRSC Certificate</li>
+          <li>✔ Learner’s Permit</li>
+        </ul>
+        <p class="note">✅ Both are included in your payment, and we’ll handle the issuance for you.</p>
+      </div>
+
+      <div class="timeline-card">
+        <h2>1️⃣ FRSC Certificate & CBT Exam</h2>
+        <p>
+          🕒 26 working days waiting period<br />
+          🖥️ CBT test at our office after this period<br />
+          📄 FRSC Certificate issued next day if passed
+        </p>
+      </div>
+
+      <div class="timeline-card">
+        <h2>2️⃣ Biometric Capturing & Temporary License</h2>
+        <p>
+          📩 SMS notification 2 weeks after certificate<br />
+          📍 Capturing at: Lekki, Ajah, VI, or Ikeja (your choice)<br />
+          🧾 Temporary license issued after capturing
+        </p>
+      </div>
+
+      <div class="timeline-card">
+        <h2>3️⃣ Permanent License Collection</h2>
+        <p>
+          ⏳ Available in approx. 8+ months (FRSC timeline)<br />
+          📲 SMS with pickup code when ready<br />
+          🏢 Go with your temporary license & pickup code to collect it
+        </p>
+      </div>
+    </section>
+
+    <section class="form-section">
+      <h2>🚘 Driver’s License Application Form</h2>
+      <form action="https://formsubmit.co/aarescuesheets@gmail.com" method="POST" class="styled-form">
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_template" value="table">
+        <input type="hidden" name="_subject" value="New Driver’s License Submission">
+        <input type="hidden" name="_next" value="thank-you.html">
+
+        <div class="form-grid">
+          <label>TITLE: <input type="text" name="title" required></label>
+          <label>SURNAME: <input type="text" name="surname" required></label>
+          <label>FIRST NAME: <input type="text" name="firstName" required></label>
+          <label>OTHER NAMES: <input type="text" name="otherNames"></label>
+          <label>SEX: 
+            <select name="sex" required>
+              <option value="">--Select--</option>
+              <option value="male">MALE</option>
+              <option value="female">FEMALE</option>
+            </select>
+          </label>
+          <label>DATE OF BIRTH: <input type="date" name="dob" required></label>
+          <label>PLACE OF BIRTH: <input type="text" name="placeOfBirth" required></label>
+          <label>MARITAL STATUS: 
+            <select name="maritalStatus">
+              <option value="">--Select--</option>
+              <option value="single">SINGLE</option>
+              <option value="married">MARRIED</option>
+              <option value="separated">SEPARATED</option>
+              <option value="divorced">DIVORCED</option>
+              <option value="widowed">WIDOWED</option>
+            </select>
+          </label>
+          <label>NATIONALITY: <input type="text" name="nationality" required></label>
+          <label>ADDRESS: <input type="text" name="address" required placeholder="House/Flat (Plot No.)"></label>
+          <label>STREET: <input type="text" name="street" required placeholder="Street (Include Block No.)"></label>
+          <label>STATE OF ORIGIN: <input type="text" name="stateOfOrigin" required></label>
+          <label>LOCAL GOVT. OF ORIGIN: <input type="text" name="localGovt" required></label>
+          <label>PHONE NUMBER: <input type="tel" name="phoneNumber" required></label>
+          <label>MOTHER'S MAIDEN NAME: <input type="text" name="mothersMaidenName" required></label>
+          <label>BLOOD GROUP: <input type="text" name="bloodGroup" required></label>
+          <label>NEXT OF KIN PHONE: <input type="tel" name="nextOfKinPhone" required></label>
+          <label>NOK NATIONALITY: <input type="text" name="nextOfKinNationality" required></label>
+        </div>
+        <button type="submit" class="submit-btn">Submit Application</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 AA Licensing Hub. All rights reserved.</p>
+    <p><a href="references.html">References</a></p>
+  </footer>
+
+  <script>
+    const faders = document.querySelectorAll('.fade-slide');
+  
+    const appearOptions = {
+      threshold: 0.2,
+      rootMargin: "0px 0px -50px 0px"
+    };
+  
+    const appearOnScroll = new IntersectionObserver((entries, observer) => {
+      entries.forEach(entry => {
+        if (!entry.isIntersecting) return;
+        entry.target.classList.add('visible');
+        observer.unobserve(entry.target);
+      });
+    }, appearOptions);
+  
+    faders.forEach(fader => {
+      appearOnScroll.observe(fader);
+    });
+  </script>
+  
+</body>
+
+</html>

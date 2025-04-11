@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Frequently Asked Questions - AA Licensing Hub" />
+    <title>AA Licensing Hub - FAQ</title>
+    <link rel="stylesheet" href="styles/project.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&family=Lora&family=Open+Sans:wght@400&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Open Sans', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9fafb;
+            color: #333;
+        }
+        header, footer {
+            background-color: #DAA520; /* Dark Yellow */
+            color: white;
+        }
+        .logo {
+            max-height: 60px;
+            margin: 10px;
+        }
+        nav ul.nav-links {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+            margin: 0;
+        }
+        nav ul.nav-links li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 10px;
+        }
+        main {
+            padding: 2rem;
+            max-width: 900px;
+            margin: auto;
+        }
+        h1 {
+            text-align: center;
+            color: #003366; /* Keeping the original color */
+            font-family: 'Roboto', sans-serif;
+        }
+        .faq-item {
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            margin-bottom: 1rem;
+            overflow: hidden;
+            transition: all 0.3s ease;
+        }
+        .faq-question {
+            background-color: #e5f0ff; /* Light blue background for questions */
+            padding: 1rem;
+            cursor: pointer;
+            font-weight: bold;
+            position: relative;
+        }
+        .faq-question::after {
+            content: "+";
+            position: absolute;
+            right: 1rem;
+            font-size: 1.5rem;
+        }
+        .faq-question.active::after {
+            content: "-";
+        }
+        .faq-answer {
+            display: none;
+            padding: 1rem;
+            background-color: #f8fafd; /* Light gray background for answers */
+        }
+        footer {
+            text-align: center;
+            padding: 1rem;
+            font-size: 0.9rem;
+        }
+
+        @media screen and (max-width: 600px) {
+            nav ul.nav-links {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <img src="images/Drivershub-logo.jpg" alt="AA Licensing Hub Logo" class="logo">
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="license.html">Driver’s License</a></li>
+                <li><a href="registration.html">Vehicle Registration</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Frequently Asked Questions</h1>
+
+        <div class="faq-item">
+            <div class="faq-question">How long does it take to get a driver's license?</div>
+            <div class="faq-answer">The process takes approximately 2–3 months for the temporary license and up to 8+ months for the permanent one, depending on FRSC issuance timelines.</div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question">Where can I do my biometric capturing?</div>
+            <div class="faq-answer">Biometric capturing can be done at our partner centers in Lekki, Ajah, VI, and Ikeja. You’ll receive an SMS when it's time.</div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question">Can I renew my driver's license online?</div>
+            <div class="faq-answer">Currently, renewals must be initiated online but completed in person at an FRSC office or authorized capturing center.</div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question">What documents are required for vehicle registration?</div>
+            <div class="faq-answer">You need valid ID, proof of ownership, insurance certificate, and customs papers (for imported vehicles).</div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question">Is the temporary license valid?</div>
+            <div class="faq-answer">Yes, the temporary license is fully valid and allows you to drive legally while waiting for your permanent license.</div>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2025 AA Licensing Hub. All rights reserved.</p>
+        <p><a href="references.html" style="color: #fff;">References</a></p>
+    </footer>
+
+    <script>
+        // FAQ toggle functionality
+        const questions = document.querySelectorAll('.faq-question');
+        questions.forEach(q => {
+            q.addEventListener('click', () => {
+                q.classList.toggle('active');
+                const answer = q.nextElementSibling;
+                answer.style.display = answer.style.display === 'block' ? 'none' : 'block';
+            });
+        });
+    </script>
+</body>
+</html>
